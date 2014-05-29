@@ -24,3 +24,8 @@ This script uses the `smileys` utility to retrieve the list of JeuxVideo.com
 smileys and will download them all in the current directory.
 
 The list of downloaded smileys is printed in real time to the standard output.
+
+### Dependencies
+
+* `smileys` (in same directory)
+* `curl`
