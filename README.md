@@ -1,7 +1,7 @@
 JeuxVideo.com Tools
 ===================
 
-A set of tools for JeuxVideo.com.
+A set of tools for [JeuxVideo.com](http://www.jeuxvideo.com/).
 
 Smileys
 -------
