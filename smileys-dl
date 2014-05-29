@@ -1,9 +1,4 @@
 #!/bin/sh -e
-#
-# This program uses the `smileys` utility to retrieve the list of
-# JeuxVideo.com smileys and will download them all in the current
-# directory.
-#
 
 readonly PROGDIR=$(dirname "$0")
 readonly SMILEYS="$PROGDIR/smileys"

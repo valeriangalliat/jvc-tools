@@ -1,8 +1,4 @@
 #!/bin/sh -e
-#
-# This script will retrieve the full list of JeuxVideo.com smileys,
-# including a static list of hidden smileys.
-#
 
 readonly SMILEYS_URL='http://www.jeuxvideo.com/oi/modal/smileys.htm'
 readonly EXTRACT_PATTERN="s/.*passCode\('([^']+)'\).*img\/([^"\""]+).*/\1\t\2/p"
