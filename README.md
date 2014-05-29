@@ -15,6 +15,14 @@ a static list of hidden smileys. The list is printed to standard output.
 
 * `curl`
 
+### Examples
+
+I generated the static smileys list with this very command:
+
+```sh
+smileys | column -t > smileys.txt
+```
+
 Smileys Download
 ----------------
 
