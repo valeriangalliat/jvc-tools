@@ -1,0 +1,31 @@
+#!/bin/sh -e
+#
+# This script will retrieve the full list of JeuxVideo.com smileys,
+# including a static list of hidden smileys.
+#
+
+readonly SMILEYS_URL='http://www.jeuxvideo.com/oi/modal/smileys.htm'
+readonly EXTRACT_PATTERN="s/.*passCode\('([^']+)'\).*img\/([^"\""]+).*/\1\t\2/p"
+
+hidden_smileys() {
+    cat << EOF
+:fish:	fish.png
+:mac:	16.gif
+:globe:	6.gif
+:loveyou:	loveyou.gif
+:hapoelparty:	hapoelparty.gif
+EOF
+}
+
+smileys() {
+    curl -s "$SMILEYS_URL" \
+        | sed -nr "$EXTRACT_PATTERN"
+
+    hidden_smileys
+}
+
+main() {
+    smileys
+}
+
+main "$@"
