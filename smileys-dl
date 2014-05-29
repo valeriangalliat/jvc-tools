@@ -1,12 +1,10 @@
 #!/bin/sh -e
 
-readonly PROGDIR=$(dirname "$0")
-readonly SMILEYS="$PROGDIR/smileys"
 readonly SMILEYS_IMG_URL='http://image.jeuxvideo.com/smileys_img/'
 
 main() {
-    "$SMILEYS" | while read code file; do
-        printf '%15s %s\n' "$code" "$file"
+    while read file; do
+        echo "$file"
         curl -so "$file" "$SMILEYS_IMG_URL/$file"
     done
 }

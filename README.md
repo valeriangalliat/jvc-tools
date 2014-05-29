@@ -28,12 +28,27 @@ Smileys Download
 
 ### Description
 
-This script uses the `smileys` utility to retrieve the list of JeuxVideo.com
-smileys and will download them all in the current directory.
+Download the list of smileys from JeuxVideo.com read from standard input
+in the current directoy.
 
 The list of downloaded smileys is printed in real time to the standard output.
 
 ### Dependencies
 
-* `smileys` (in same directory)
 * `curl`
+
+### Examples
+
+Using the `smileys` tool to retrieve the list and then download everything:
+
+```sh
+smileys | awk '{print $2}' | smileys-dl
+```
+
+Same thing but using the cache file if available:
+
+```sh
+[ -f smileys.txt ] && cat smileys.txt || smileys \
+    | awk '{print $2}' \
+    | smileys-dl
+```
