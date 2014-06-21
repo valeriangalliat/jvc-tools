@@ -52,3 +52,34 @@ Same thing but using the cache file if available:
     | awk '{print $2}' \
     | smileys-dl
 ```
+
+Video
+-----
+
+### Description
+
+Extract a video stream URL from a [JeuxVideo.com](http://www.jeuxvideo.com/)
+page containing an embeded video. This allows to play a video with
+your favorite player instead of requiring Flash.
+
+### Dependencies
+
+* `curl`
+
+### Examples
+
+```sh
+mpv $(video 'http://www.jeuxvideo.com/videos-editeurs/0003/00034710/grand-theft-auto-v-pc-e3-2014-un-pas-dans-la-nouvelle-generation-00121128.htm')
+```
+
+A good idea is to create a little function in your shell configuration
+file, that will take a video page URL, use this tool to get the stream URL
+and pass it directly to your favorite video player.
+
+From my zsh configuration:
+
+```sh
+jvcp() {
+    "$VIDEO_PLAYER" $("$DOTFILES/deps/zsh/jvc-tools/video" "$1")
+}
+```

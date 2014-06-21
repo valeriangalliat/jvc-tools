@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+url=$1; shift
+
+curl "$url" \
+    | grep '"file":"http://video[a-z0-9]*\.jeuxvideo\.com' \
+    | sed -e 's/"},{.*//' -e 's/.*http/http/'
