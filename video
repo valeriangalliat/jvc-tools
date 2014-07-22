@@ -5,4 +5,5 @@ url=$1; shift
 curl -s "$url" \
     | grep --extended-regex --only-matching \
         'http://video[a-z0-9]*\.jeuxvideo\.com/[^"]+' \
+    | grep -v '&#' \
     | head -1
