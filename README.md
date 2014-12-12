@@ -1,9 +1,9 @@
 jeuxvideo.com tools
 ===================
 
-A set of tools for [jeuxvideo.com](http://www.jeuxvideo.com/).
+> A set of tools for [jeuxvideo.com](http://www.jeuxvideo.com/).
 
-Smileys
+smileys
 -------
 
 ### Description
@@ -13,7 +13,7 @@ a static list of hidden smileys. The list is printed to standard output.
 
 ### Dependencies
 
-* `curl`
+* curl
 
 ### Examples
 
@@ -23,8 +23,8 @@ I generated the static smileys list with this very command:
 smileys | column -t > smileys.txt
 ```
 
-Smileys download
-----------------
+smileys-dl
+----------
 
 ### Description
 
@@ -35,7 +35,7 @@ The list of downloaded smileys is printed in real time to the standard output.
 
 ### Dependencies
 
-* `curl`
+* curl
 
 ### Examples
 
@@ -53,7 +53,7 @@ Same thing but using the cache file if available:
     | smileys-dl
 ```
 
-Video
+video
 -----
 
 ### Description
@@ -64,7 +64,7 @@ your favorite player instead of requiring Flash.
 
 ### Dependencies
 
-* `curl`
+* curl
 
 ### Examples
 
