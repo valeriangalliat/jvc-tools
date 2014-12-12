@@ -1,14 +1,14 @@
-JeuxVideo.com Tools
+jeuxvideo.com Tools
 ===================
 
-A set of tools for [JeuxVideo.com](http://www.jeuxvideo.com/).
+A set of tools for [jeuxvideo.com](http://www.jeuxvideo.com/).
 
 Smileys
 -------
 
 ### Description
 
-This script will retrieve the full list of JeuxVideo.com smileys, including
+This script will retrieve the full list of jeuxvideo.com smileys, including
 a static list of hidden smileys. The list is printed to standard output.
 
 ### Dependencies
@@ -28,7 +28,7 @@ Smileys Download
 
 ### Description
 
-Download the list of smileys from JeuxVideo.com read from standard input
+Download the list of smileys from jeuxvideo.com read from standard input
 in the current directoy.
 
 The list of downloaded smileys is printed in real time to the standard output.
@@ -58,7 +58,7 @@ Video
 
 ### Description
 
-Extract a video stream URL from a [JeuxVideo.com](http://www.jeuxvideo.com/)
+Extract a video stream URL from a [jeuxvideo.com](http://www.jeuxvideo.com/)
 page containing an embeded video. This allows to play a video with
 your favorite player instead of requiring Flash.
 
