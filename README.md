@@ -1,4 +1,4 @@
-jeuxvideo.com Tools
+jeuxvideo.com tools
 ===================
 
 A set of tools for [jeuxvideo.com](http://www.jeuxvideo.com/).
@@ -23,7 +23,7 @@ I generated the static smileys list with this very command:
 smileys | column -t > smileys.txt
 ```
 
-Smileys Download
+Smileys download
 ----------------
 
 ### Description
